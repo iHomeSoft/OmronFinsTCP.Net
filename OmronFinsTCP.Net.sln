@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmronFinsTCP.Net", "OmronFinsTCP.Net\OmronFinsTCP.Net.csproj", "{C9896F5D-A103-4E5E-8D31-36820954D838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinsDebuger", "FinsDebuger\FinsDebuger.csproj", "{398EFBBF-200F-49FA-AE04-B2A205A65BC6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C9896F5D-A103-4E5E-8D31-36820954D838} = {C9896F5D-A103-4E5E-8D31-36820954D838}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{452E1CBB-5A94-45B5-BC26-5882A0A4BE83}"
+	ProjectSection(SolutionItems) = preProject
+		OmronFinsTCP.Net.nuspec = OmronFinsTCP.Net.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9896F5D-A103-4E5E-8D31-36820954D838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9896F5D-A103-4E5E-8D31-36820954D838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9896F5D-A103-4E5E-8D31-36820954D838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9896F5D-A103-4E5E-8D31-36820954D838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398EFBBF-200F-49FA-AE04-B2A205A65BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398EFBBF-200F-49FA-AE04-B2A205A65BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398EFBBF-200F-49FA-AE04-B2A205A65BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398EFBBF-200F-49FA-AE04-B2A205A65BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

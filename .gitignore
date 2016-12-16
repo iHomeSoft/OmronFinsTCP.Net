@@ -1,0 +1,5 @@
+*.suo
+bin
+obj
+*.user
+*.nuspec
