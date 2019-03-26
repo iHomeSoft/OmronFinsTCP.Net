@@ -26,7 +26,7 @@ namespace OmronFinsTCP.Net
                     case PlcMemory.HR:
                         return 0x32;
                     case PlcMemory.AR:
-                        return 0x32;  
+                        return 0x33;  
                     case PlcMemory.DM:
                         return 0x02;
                     default:
