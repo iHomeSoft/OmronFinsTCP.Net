@@ -14,16 +14,16 @@ namespace OmronFinsTCP.Net
         //CIO_Bit = 0x30,
         //WR_Word = 0xB1,
         //WR_Bit = 0x31,
+        //HR_Word =0xB2,
+        //HR_Bit = 0x32,
+        //AR_Word =0xB3,
+        //AR_Bit = 0x33,
         //DM_Word = 0x82,
         //DM_Bit = 0x02
-        //HR_Word =0xB2
-        //HR_Bit = 0x32
-        //AR_Word =0xB3
-        //AR_Bit = 0x33
         CIO,
         WR,
-        AR,
         HR,
+        AR,
         DM
     }
 
