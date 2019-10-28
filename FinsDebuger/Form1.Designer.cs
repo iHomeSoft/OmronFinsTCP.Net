@@ -72,7 +72,7 @@
             this.txtPlcip.Name = "txtPlcip";
             this.txtPlcip.Size = new System.Drawing.Size(120, 21);
             this.txtPlcip.TabIndex = 0;
-            this.txtPlcip.Text = "192.168.62.201";
+            this.txtPlcip.Text = "172.29.29.26";
             // 
             // btnCon
             // 
@@ -315,7 +315,7 @@
             this.txtBitAdd.Name = "txtBitAdd";
             this.txtBitAdd.Size = new System.Drawing.Size(68, 21);
             this.txtBitAdd.TabIndex = 24;
-            this.txtBitAdd.Text = "100.15";
+            this.txtBitAdd.Text = "207.01";
             // 
             // button2
             // 

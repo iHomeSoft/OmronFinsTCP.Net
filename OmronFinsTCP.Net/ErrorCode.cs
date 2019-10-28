@@ -39,6 +39,7 @@ namespace OmronFinsTCP.Net
                     switch (Sub)
                     {
                         case 0x00: return true;//the only situation of success
+                        case 0x40: return true;//错误码64，是因为PLC中产生了报警，但是数据还是能正常读到的，屏蔽64报警或清除plc错误可解决
                         case 0x01: return false;//RaiseException("service canceled");
                     }
                     break;
