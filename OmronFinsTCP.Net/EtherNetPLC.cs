@@ -106,6 +106,16 @@ namespace OmronFinsTCP.Net
         public short ReadWords(PlcMemory mr, short ch, short cnt, out short[] reData)
         {
             reData = new short[(int)(cnt)];//储存读取到的数据
+
+            short tempCnt = 0;
+            short tempCh = 0;
+            if (cnt > 999)
+            {
+                tempCnt = (short)(cnt - 999);
+                tempCh = (short)(ch + 999);
+                cnt = 999;
+            }
+
             int num = (int)(30 + cnt * 2);//接收数据(Text)的长度,字节数
             byte[] buffer = new byte[num];//用于接收数据的缓存区大小
             byte[] array = FinsClass.FinsCmd(RorW.Read, mr, MemoryType.Word, ch, 00, cnt);
@@ -132,6 +142,15 @@ namespace OmronFinsTCP.Net
                                 byte[] temp = new byte[] { buffer[30 + i * 2 + 1], buffer[30 + i * 2] };
                                 reData[i] = BitConverter.ToInt16(temp, 0);
                             }
+
+                            short[] tempReData;
+                            if (tempCnt > 0)//有多余数值才执行循环读取
+                            {
+                                ReadWords(mr, tempCh, tempCnt, out tempReData);
+                                tempReData.CopyTo(reData, 999);
+                                //reData.CopyTo(tempReData, 730);
+                            }
+
                             return 0;
                         }
                         else
